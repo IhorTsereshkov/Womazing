@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300&display=swap");
+%btn {
+  color: $alternateColor;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 139%;
+  letter-spacing: 2px;
+  background-color: $accentColor;
+  padding: 22px 50px;
+  border: none;
+  cursor: pointer;
+}
+%text_size15 {
+  color: $mainColor;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  line-height: 21px;
+}
+%text_size17 {
+  color: $mainColor;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  line-height: 24px;
+}
+%text_size20 {
+  color: $mainColor;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  line-height: 28px;
+}
+@mixin container_box($max_width, $width, $padding, $margin) {
+  max-width: $max_width;
+  width: $width;
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin text_box($font, $color, $size, $weight, $spacing) {
+  font-family: $font;
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
+@mixin gri_box($grid, $templates_colums, $templates_rows, $just_cont) {
+  display: $grid;
+  grid-template-columns: $templates_colums;
+  grid-template-rows: $templates_rows;
+  justify-content: $just_cont;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font;
+  font-size: 17px;
+  font-weight: 500;
+  color: $mainColor;
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 10px;
+    .btn {
+      @extend %btn;
+    }
+  }
+}
+%text_shop {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 60.5px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
