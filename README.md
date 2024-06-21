@@ -1,0 +1,1 @@
+Woomagazing - интернет-магазин женской одежды. Проект реализован на трёх страницах (Главная, Магазин, О бренде). Используемые инструменты: HTML, SCSS. Дизайн: https://www.figma.com/design/OFNh7sSivQKwPRV4hBv8Yi/WOMAZING-%2B?node-id=0-1&t=AZ9cq0eKtKIyDeKF-0
